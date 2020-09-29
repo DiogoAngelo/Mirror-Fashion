@@ -1,27 +1,21 @@
-
-
-.caixa {
+.container-principal {
     width: 940px;
     margin: 0 auto;
-    position: relative;
-    padding: 30px 0;
 }
 
-.caixa ul {
-    position: absolute;
-    top: 100px;
-    right: 0;
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
-.caixa li {
-    float: left;
-    margin-left: 20px;
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .sacola {
-    position: absolute;
-    top: 20px;
-    right: 0;
     width: 140px;
     text-align: right;
     background: url('../img/sacola.png');
@@ -32,21 +26,34 @@
     font-size: 14px;
 }
 
-.caixa a {
+.menu-navegacao {
+    display: flex;
+    height: 60px;
+    align-items: flex-end;
+}
+
+.menu-navegacao li {
+    margin-left: 30px;
+}
+
+.menu-navegacao a {
     color: #036;
     text-decoration: none;
 }
 
-.caixa a:hover {
+.menu-navegacao a:hover {
     color: #1200ff;
 }
 
-.principal {
-    width: 940px;
-    margin: 0 auto;
+
+/*-----------------principal--------------*/
+
+.inicio {
+    display: flex;
+    justify-content: center;
 }
 
-.principal h3 {
+.inicio h3 {
     font-size: 20px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -54,12 +61,11 @@
 
 .busca {
     background-color: #acacac;
-    width: 220px;
+    width: 200px;
     padding: 10px;
     border-radius: 5px 5px 0 0;
-    box-sizing: border-box;
     margin-bottom: 5px;
-    float: left;
+    box-sizing: border-box;
 }
 
 .busca button {
@@ -73,24 +79,9 @@
 
 .departamentos {
     background-color: #acacac;
-    width: 220px;
+    width: 200px;
     padding: 10px;
     box-sizing: border-box;
-    float: left;
-    clear: left;
-}
-
-.departamentos a {
-    display: block;
-    color: #434343;
-    text-decoration: none;
-}
-.departamentos li{
-    line-height: 1.5em;
-}
-.departamentos a:hover{
-    transform: scale(1.1);
-    font-weight: bold;
 }
 
 .departamentos ul {
@@ -98,6 +89,10 @@
     width: 200px;
     margin-left: -10px;
     padding: 10px;
+}
+
+.departamentos li {
+    line-height: 1.5em;
 }
 
 .departamentos li ul {
@@ -109,96 +104,119 @@
     display: block;
 }
 
+.departamentos a {
+    display: block;
+    color: #434343;
+    text-decoration: none;
+}
+
+.departamentos a:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
 .banner {
-    display: inline-block;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 
 /*-------------------PAINEL------------------*/
-.paineis{
-    width: 940px;
-    margin: 0 auto;
-    padding: 30px 0;
 
+.paineis {
+    display: flex;
+    justify-content: center;
 }
-.painel{
-    display: inline-block;
-    width: 460px;
-    box-sizing: border-box;
-    background: red;
-    margin-left: 5px;
-    box-shadow: 0 0 5px #666;
 
+.novidades,
+.mais-vendidos {
+    display: flex;
+    justify-content: center;
+    width: 470px;
+    flex-wrap: wrap;
+    padding: 10px 0;
 }
-.novidades{
+
+.painel {
     background: linear-gradient(#f5dcdc, #dcdcf5);
+    margin: 20px 5px;
+    box-shadow: 0 0 5px;
 }
-.mais-vendidos{
+
+.painel+.painel {
     background: linear-gradient(#dcdcf5, #f5dcdc);
 }
-.painel h3{
-    font-size: 25px;
-    padding: 10px 0 0 10px;
-    text-transform: uppercase;
+
+.painel li {
+    margin: 5px;
 }
 
-.painel li{
-    display: inline-block;
-    padding: 20px 0  10px 7px;
-    text-align: center;
-    width: 140px;
-    transition: 0.2s ease-in-out;
-    
-}
-.painel li:hover{
+.painel li:hover {
     transform: scale(1.05);
-
-
+    box-shadow: 0px 0px 8px #bbb;
+    transition: .3s;
 }
 
-.painel a{
+.painel a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     text-decoration: none;
     color: #1d1d1d;
 }
+
+.painel h3 {
+    font-size: 25px;
+    padding: 5px 0 0 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
 /*-------------RODAPE------------*/
 
-footer{
+footer {
     background: url('../img/fundo-rodape.png');
 }
-.rodape-container{
-    width: 940px;
-    margin: 0 auto;
+
+.rodape-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 30px 0;
-    position: relative;
 }
-.social{
-    position: absolute;
-    top: 50px;
-    right: 0;
+
+.social ul {
+    display: flex;
 }
-.social li{
-    float: left;    
-    margin-left: 40px;
+
+.social li {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
 }
-.social a{
-    display: block;
+
+.social a {
     background-repeat: no-repeat;
     height: 32px;
     width: 32px;
     text-indent: -9999px;
 }
-.social a:hover{
+
+.social a:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 5px #fff;;
-}
-.social a[href*=google]{
-    background: url('../img/googleplus.png');
-}
-.social a[href*=facebook]{
-    background: url('../img/facebook.png');
-}
-.social a[href*=twitter]{
-    background: url('../img/twitter.png');
+    box-shadow: 0 0 5px #fff;
+    ;
 }
 
+.social a[href*=google] {
+    background: url('../img/googleplus.png');
+}
+
+.social a[href*=facebook] {
+    background: url('../img/facebook.png');
+}
+
+.social a[href*=twitter] {
+    background: url('../img/twitter.png');
+}
