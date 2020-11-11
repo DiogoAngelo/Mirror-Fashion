@@ -3,79 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirror Fashion</title>
     <link ref="icon" href="img/sacola.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 
 <body>
     <header>
-        <div class="container-principal">
-            <div class="cabecalho">
+        <div class="cabecalho">
+            <h1 class="logo-loja">
+                mirrorfashion
+                <!-- <img src="img/logo.png"> -->
+            </h1>
 
-                <h1><img src="img/logo.png"></h1>
+            <button class="botao-show">show menu</button>
 
-                <div class="box">
-                    <section class="sacola">
-                        <p>Nenhum item na sacola de compras</p>
-                    </section>
-                    <nav>
-                        <ul class="menu-navegacao">
-                            <li><a href="index.html">Loja</a></li>
-                            <li><a href="#">Lista de Desejos</a></li>
-                            <li><a href="#">Cartão Fidelidade</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                            <li><a href="#">Ajuda</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-            </div>
+            <section class="navegacao">
+                <nav>
+                    <button class="botao-hide">hide menu</button>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Blusas e Camisas</a></li>
+                        <li><a href="#">Calças</a></li>
+                        <li><a href="#">Saias</a></li>
+                        <li><a href="#">Vestidos</a></li>
+                        <li><a href="#">Sapatos</a></li>
+                        <li><a href="#">Bolsas e Carteiras</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                        <li><a href="#">Lista de Desejos</a></li>
+                        <li><a href="#">Cartão Fidelidade</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </nav>
+            </section>
         </div>
     </header>
     <main>
-        <div class="container-principal">
+        <img class="banner" src="img/destaque-home-2.png">
 
-            <div class="inicio">
-                <div class="menu-opcoes">
-                    <section class="busca">
-                        <h3>Busca</h3>
-                        <form>
-                            <input type="text">
-                            <button>Buscar</button>
-                        </form>
-                    </section>
+        <div class="paineis">
 
-                    <section class="departamentos">
-                        <h3>Departamentos</h3>
-                        <ul>
-                            <li><a href="#">Blusas e Camisas</a>
-                                <ul>
-                                    <li><a href="#">Manga Curta</a></li>
-                                    <li><a href="#">Manga Comprida</a></li>
-                                    <li><a href="#">Camisa Social</a></li>
-                                    <li><a href="#">Camisa Casual</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Calças</a></li>
-                            <li><a href="#">Saias</a></li>
-                            <li><a href="#">Vestidos</a></li>
-                            <li><a href="#">Sapatos</a></li>
-                            <li><a href="#">Bolsas e Carteiras</a></li>
-                            <li><a href="#">Acessórios</a></li>
-                        </ul>
-                    </section>
-                </div>
-
-                <section class="banner">
-                    <img src="img/destaque-home.png">
-                </section>
-            </div>
-
-            <div class="paineis">
-
-                <section class="painel">
+            <section class="painel">
+                <div class="painel-novidades">
                     <h3>Novidades</h3>
                     <ul class="novidades">
                         <li>
@@ -115,8 +89,9 @@
                             </a>
                         </li>
                     </ul>
-                </section>
-                <section class="painel">
+                </div>
+
+                <div class="painel-mais-vendidos">
                     <h3>Mais Vendidos</h3>
                     <ul class="mais-vendidos">
                         <li>
@@ -156,8 +131,8 @@
                             </a>
                         </li>
                     </ul>
-                </section>
-            </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -174,7 +149,7 @@
         </div>
     </footer>
 
-
+    <script src="js/style.js"></script>
 </body>
 
 </html>
